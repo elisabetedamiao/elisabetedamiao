@@ -1,145 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Elisabete Damião Alves</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Font Awesome (ícones) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-
-  <!--
-  VERSÃO BASE DO SITE
-  Página inicial estável com foto e ícones
-  -->
 
   <style>
     body {
       margin: 0;
-      font-family: Georgia, serif;
-      background: #f4f4f4;
+      font-family: "Georgia", serif;
+      background-color: #f4f5f7;
       color: #333;
-      text-align: center;
+      line-height: 1.6;
     }
 
     header {
-      background: #2f3e46;
+      background: linear-gradient(135deg, #2f3e46, #354f52);
       color: white;
-      padding: 60px 20px 120px;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #fff;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 42px;
+      margin: 10px 0;
+      font-size: 2.2em;
     }
 
     header p {
-      margin-top: 15px;
-      font-size: 18px;
-      letter-spacing: 1px;
+      font-size: 1.1em;
+      opacity: 0.9;
     }
 
-    .photo-wrapper {
-      margin-top: -90px;
-    }
-
-    .photo-wrapper img {
-      width: 320px;
-      height: 320px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 8px solid white;
-      background: white;
-    }
-
-    .bio {
-      max-width: 700px;
+    main {
+      max-width: 1000px;
       margin: 40px auto;
-      font-size: 18px;
-      line-height: 1.6;
       padding: 0 20px;
     }
 
-    .icons {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin: 50px 0 70px;
-      flex-wrap: wrap;
+    .intro {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 1.1em;
     }
 
-    .icon-box {
-      text-decoration: none;
-      color: #2f3e46;
-      font-size: 16px;
-      transition: transform 0.3s, color 0.3s;
-      max-width: 160px;
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
     }
 
-    .icon-box i {
-      font-size: 36px;
-      margin-bottom: 12px;
-      display: block;
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s;
     }
 
-    .icon-box span {
-      display: block;
-      line-height: 1.3;
-    }
-
-    .icon-box:hover {
-      color: #000;
+    .card:hover {
       transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #354f52;
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Elisabete Damião Alves</h1>
-    <p>Pianista • Compositora • Regente Coral • Educadora Musical</p>
-  </header>
+<header>
+  <img src="assets/img/bete-regente.jpg" alt="Elisabete Damião Alves regendo coral">
+  <h1>Elisabete Damião Alves</h1>
+  <p>Pianista • Compositora • Regente Coral • Educadora Musical</p>
+</header>
 
-  <div class="photo-wrapper">
-    <img src="assets/img/bete-regente.jpg" alt="Elisabete Damião Alves regendo coral">
-  </div>
+<main>
 
-  <div class="bio">
+  <div class="intro">
     <p>
       A música sempre foi, para mim, um espaço de escuta, expressão e encontro.
       Este site reúne parte de minha trajetória artística e pedagógica,
-      preservando memórias, composições e projetos desenvolvidos ao longo dos anos.
+      preservando composições, projetos corais e memórias construídas ao longo dos anos.
     </p>
   </div>
 
-  <!-- ÍCONES -->
-  <div class="icons">
+  <!-- SEÇÕES / CARDS -->
+  <div class="sections">
 
-    <a href="#" class="icon-box">
-      <i class="fas fa-music"></i>
-      <span>Partituras e Composições</span>
-    </a>
+    <div class="card">
+      <h3>🎼 Partituras, Composições e Arranjos</h3>
+      <p>
+        Obras autorais, peças publicadas, música litúrgica
+        e projetos composicionais desenvolvidos ao longo da trajetória.
+      </p>
+    </div>
 
-    <a href="#" class="icon-box">
-      <i class="fas fa-users"></i>
-      <span>Corais e Apresentações</span>
-    </a>
+    <div class="card">
+      <h3>🎶 Corais, Regência e Apresentações</h3>
+      <p>
+        Histórico de corais dirigidos, concertos,
+        projetos coletivos e experiências musicais compartilhadas.
+      </p>
+    </div>
 
-    <a href="#" class="icon-box">
-      <i class="fas fa-graduation-cap"></i>
-      <span>Educação Musical e Projetos</span>
-    </a>
+    <div class="card">
+      <h3>🎥 Vídeos e Registros Audiovisuais</h3>
+      <p>
+        Apresentações, participações e registros musicais,
+        organizados por anos e projetos.
+      </p>
+    </div>
 
-    <a href="#" class="icon-box">
-      <i class="fas fa-newspaper"></i>
-      <span>Imprensa, Registros e Eventos</span>
-    </a>
+    <div class="card">
+      <h3>📰 Imprensa, Entrevistas e Eventos</h3>
+      <p>
+        Reportagens, matérias, entrevistas,
+        registros públicos e participação em eventos culturais.
+      </p>
+    </div>
 
   </div>
+
+</main>
+
+<footer>
+  © Elisabete Damião Alves — Acervo musical e artístico
+</footer>
 
 </body>
 </html>
