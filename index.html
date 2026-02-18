@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Define acentuação correta -->
   <meta charset="UTF-8">
+
+  <!-- Título que aparece na aba do navegador -->
   <title>Elisabete Jansen Cintra Damião Alves</title>
+
+  <!-- Responsividade (faz o site funcionar bem no celular) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    /* ===== ESTILO GERAL DO SITE ===== */
     body {
-      margin: 0;
-      font-family: "Georgia", serif;
-      background-color: #f4f5f7;
-      color: #333;
-      line-height: 1.6;
+      margin: 0; /* remove margens padrão do navegador */
+      font-family: Georgia, serif; /* fonte principal */
+      background-color: #f4f5f7; /* cor de fundo */
+      color: #333; /* cor padrão do texto */
+      line-height: 1.6; /* espaçamento entre linhas */
     }
 
+    /* ===== CABEÇALHO ===== */
     header {
       background: linear-gradient(135deg, #2f3e46, #354f52);
       color: white;
@@ -21,9 +28,10 @@
       text-align: center;
     }
 
+    /* Foto do cabeçalho */
     header img {
       max-width: 180px;
-      border-radius: 50%;
+      border-radius: 50%; /* deixa a imagem redonda */
       margin-bottom: 20px;
       border: 4px solid #fff;
     }
@@ -38,9 +46,10 @@
       opacity: 0.9;
     }
 
+    /* ===== CONTEÚDO PRINCIPAL ===== */
     main {
-      max-width: 1000px;
-      margin: 40px auto;
+      max-width: 1000px; /* largura máxima */
+      margin: 40px auto; /* centraliza na tela */
       padding: 0 20px;
     }
 
@@ -50,12 +59,14 @@
       font-size: 1.1em;
     }
 
+    /* ===== SEÇÕES EM FORMATO DE CARDS ===== */
     .sections {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 25px;
     }
 
+    /* Estilo dos cards */
     .card {
       background: white;
       padding: 25px;
@@ -63,8 +74,11 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       text-align: center;
       transition: transform 0.2s;
+      text-decoration: none; /* remove sublinhado do link */
+      color: inherit; /* herda a cor do texto */
     }
 
+    /* Efeito ao passar o mouse */
     .card:hover {
       transform: translateY(-5px);
     }
@@ -75,13 +89,13 @@
       font-size: 1.1em;
     }
 
-    /* 🔹 ISTO GARANTE QUE O TEXTO APAREÇA 🔹 */
     .card p {
       margin-top: 10px;
       font-size: 0.95em;
       color: #555;
     }
 
+    /* ===== RODAPÉ ===== */
     footer {
       text-align: center;
       padding: 30px;
@@ -93,14 +107,17 @@
 
 <body>
 
+<!-- ===== CABEÇALHO DO SITE ===== -->
 <header>
   <img src="assets/img/bete-regente.jpg" alt="Elisabete Damião Alves regendo coral">
   <h1>Elisabete Jansen Cintra Damião Alves</h1>
   <p>Pianista • Compositora • Regente Coral • Educadora Musical</p>
 </header>
 
+<!-- ===== CONTEÚDO PRINCIPAL ===== -->
 <main>
 
+  <!-- Texto de apresentação -->
   <div class="intro">
     <p>
       A música sempre foi, para mim, um espaço de escuta, expressão e encontro.
@@ -109,34 +126,37 @@
     </p>
   </div>
 
+  <!-- Área dos cartões clicáveis -->
   <div class="sections">
 
-      <a href="composicoes.html" class="card" style="text-decoration:none; color:inherit;">
+    <a href="composicoes.html" class="card">
       <h3>🎼 Partituras, Composições e Arranjos</h3>
       <p>Obras autorais, peças publicadas e projetos composicionais.</p>
     </a>
-    
-      <a href="videos.html" class="card" style="text-decoration:none; color:inherit;">
+
+    <a href="videos.html" class="card">
       <h3>🎶 Corais, Regência e Participações</h3>
       <p>Histórico de corais, participações e registros musicais por ano.</p>
     </a>
 
-     <a href="aulas.html" class="card" style="text-decoration:none; color:inherit;">
+    <a href="aulas.html" class="card">
       <h3>🎥 Educação musical</h3>
-      <p>Exercícios vocais, ...</p>
-       </a>
+      <p>Exercícios vocais e materiais pedagógicos.</p>
+    </a>
 
-    <a href="imprensa.html" class="card" style="text-decoration:none; color:inherit;">
-  <h3>📰 Imprensa, Entrevistas e Eventos</h3>
-  <p>Matérias, entrevistas e participações em mídias e instituições culturais.</p>
-  </a>
+    <a href="imprensa.html" class="card">
+      <h3>📰 Imprensa, Entrevistas e Eventos</h3>
+      <p>Matérias, entrevistas e participações em mídias e instituições culturais.</p>
+    </a>
 
-    </div>
+  </div>
 </main>
 
+<!-- ===== RODAPÉ ===== -->
 <footer>
   © Elisabete Damião — Acervo musical e artístico
 </footer>
 
 </body>
 </html>
+
