@@ -1,132 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Educação musical</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Educação Musical</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background-color: #f4f5f7;
-      color: #333;
-      line-height: 1.6;
-    }
+<style>
 
-    header {
-      background: linear-gradient(135deg, #2f3e46, #354f52);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #f4f5f7;
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.4em;
-    }
+/* HEADER */
 
-    header p {
-      margin-top: 12px;
-      font-size: 1.1em;
-      opacity: 0.9;
-    }
+header {
+  background: linear-gradient(135deg, #2f3e46, #354f52);
+  color: white;
+  padding: 55px 20px;
+  text-align: center;
+}
 
-    main {
-      max-width: 950px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: normal;
+}
 
-    /* TÍTULO DO CORAL */
-    .choir {
-      margin-bottom: 70px;
-    }
+header p {
+  margin-top: 10px;
+  font-size: 1.05em;
+  opacity: 0.9;
+}
 
-    .choir h2 {
-      color: #2f3e46;
-      font-size: 2em;
-      margin-bottom: 30px;
-      border-left: 6px solid #354f52;
-      padding-left: 12px;
-    }
+/* CONTEÚDO */
 
-    /* ANOS */
-    .year {
-      margin-bottom: 45px;
-    }
+main {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
 
-    .year h3 {
-      color: #354f52;
-      border-bottom: 2px solid #354f52;
-      padding-bottom: 6px;
-      margin-bottom: 18px;
-      font-size: 1.4em;
-    }
+/* SEÇÃO */
 
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
+.section {
+  margin-bottom: 60px;
+}
 
-    li {
-      background: white;
-      margin: 12px 0;
-      padding: 18px 20px;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    }
+.section h2 {
+  color: #2f3e46;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+  border-left: 5px solid #354f52;
+  padding-left: 12px;
+  font-weight: normal;
+}
 
-    a {
-      color: #2f3e46;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* CARD DO VÍDEO */
 
-    a:hover {
-      text-decoration: underline;
-    }
+.video-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
 
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
+.video-card h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  color: #354f52;
+  font-weight: normal;
+}
+
+/* RESPONSIVO */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Educação musical</h1>
-  <p>Técnica vocal</p>
+  <h1>Educação Musical</h1>
+  <p>Exercícios, técnica vocal e material pedagógico</p>
 </header>
 
 <main>
 
-  <!-- AULAS -->
-  <section class="choir">
-    <h2>Aulas gravadas</h2>
+<section class="section">
+<h2>Técnica Vocal</h2>
 
-       <!-- Técnica vocal -->
-   <details>
-      <summary>Técnica vocal</summary>
-      <ul>
-        <li><a href="https://youtu.be/TfFqVda9Fk8?si=-Ju4mNrX-1q6CK5J" target="_blank">Aquecimento</a></li>
-        <li><a href="https://youtu.be/VFLYpWxPr_Q?si=TwZHnhuFgDXPsfpq" target="_blank">Aquecimento 2</a></li>
-        <li><a href="https://youtu.be/3IVjxSRAbWY?si=XXcXHtSG_EaTeU5k" target="_blank">Escala musical</a></li>
-        <li><a href="https://youtu.be/uG6Uy938aOc?si=91F5J86Xdkx1KCV0" target="_blank">Escala cromática</a></li>
-        <li><a href="https://youtu.be/p8Ux8mi1o38?si=QjcEO8ov2nn40USK" target="_blank">Articulação 1</a></li>
-        <li><a href="https://youtu.be/ATuPfvE_HJw?si=DbRf6nq28ISAfnn4" target="_blank">Articulação 2</a></li>
-        <li><a href="https://youtu.be/zkE1N9tifT8?si=8NyQyV8HuNwQ-slJ" target="_blank">Articulação 3</a></li>
-      </ul>
-    </details>
-    
+<div class="video-card">
+  <h3>Aquecimento Vocal — preparação inicial da voz</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/TfFqVda9Fk8" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="video-card">
+  <h3>Aquecimento Vocal II — extensão e respiração</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/VFLYpWxPr_Q" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="video-card">
+  <h3>Escala Musical — percepção e afinação</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/3IVjxSRAbWY" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="video-card">
+  <h3>Escala Cromática — controle e precisão vocal</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/uG6Uy938aOc" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="video-card">
+  <h3>Articulação I — clareza na emissão</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/p8Ux8mi1o38" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="video-card">
+  <h3>Articulação II — dicção e projeção</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/ATuPfvE_HJw" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="video-card">
+  <h3>Articulação III — coordenação e agilidade</h3>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/zkE1N9tifT8" allowfullscreen></iframe>
+  </div>
+</div>
+
+</section>
+
 </main>
 
 <footer>
-  © Elisabete Damião — Acervo Coral
+  © Elisabete Damião — Educação Musical
 </footer>
 
 </body>
