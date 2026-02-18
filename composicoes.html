@@ -1,99 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Partituras, Composições e Arranjos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Partituras, Composições e Arranjos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background-color: #f4f5f7;
-      color: #333;
-      line-height: 1.6;
-    }
+<style>
 
-    header {
-      background: linear-gradient(135deg, #2f3e46, #354f52);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #f4f5f7;
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.4em;
-    }
+/* HEADER */
 
-    header p {
-      margin-top: 12px;
-      font-size: 1.1em;
-      opacity: 0.9;
-    }
+header {
+  background: linear-gradient(135deg, #2f3e46, #354f52);
+  color: white;
+  padding: 55px 20px;
+  text-align: center;
+}
 
-    main {
-      max-width: 950px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
 
-    /* TÍTULO DO CORAL */
-    .choir {
-      margin-bottom: 70px;
-    }
+header p {
+  margin-top: 10px;
+  font-size: 1.05em;
+  opacity: 0.9;
+}
 
-    .choir h2 {
-      color: #2f3e46;
-      font-size: 2em;
-      margin-bottom: 30px;
-      border-left: 6px solid #354f52;
-      padding-left: 12px;
-    }
+/* CONTEÚDO */
 
-    /* ANOS */
-    .year {
-      margin-bottom: 45px;
-    }
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
 
-    .year h3 {
-      color: #354f52;
-      border-bottom: 2px solid #354f52;
-      padding-bottom: 6px;
-      margin-bottom: 18px;
-      font-size: 1.4em;
-    }
+/* CADA COMPOSIÇÃO */
 
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
+.choir {
+  margin-bottom: 60px;
+}
 
-    li {
-      background: white;
-      margin: 12px 0;
-      padding: 18px 20px;
-      border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    }
+.choir h2 {
+  color: #2f3e46;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  border-left: 5px solid #354f52;
+  padding-left: 12px;
+  font-weight: normal;
+}
 
-    a {
-      color: #2f3e46;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* DETALHES */
 
-    a:hover {
-      text-decoration: underline;
-    }
+details {
+  margin-bottom: 20px;
+}
 
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
+summary {
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background: white;
+  margin: 12px 0;
+  padding: 16px 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+  font-size: 0.95em;
+}
+
+a {
+  color: #2f3e46;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ÁUDIO */
+
+audio {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* VÍDEO RESPONSIVO */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+</style>
 </head>
 
 <body>
@@ -105,132 +145,164 @@
 
 <main>
 
-  <section class="choir">
-    <h2>Bênção - Que o Senhor da paz (2 Tessalonicenses 3.16 )</h2>
-     <details>
-      <summary>Partituras e gravação</summary>
-      <ul>
-       <li><a href="assets/pdf/bencao-que-o-senhor-da-paz.pdf" target="_blank">Orquestração</a></li>
-        <li><a href="https://youtu.be/GXaLaP7QzH8" target="_blank">Gravação</a></li>
-            </ul>
-    </details>
+<!-- BÊNÇÃO -->
 
-  <section class="choir">
-    <h2>O Senhor irá contigo (Deuteronômio 31.8)</h2>
-     <details>
-  <summary>Partitura e gravação</summary>
-  <ul>
-    <li>
-      <a href="assets/pdf/o-senhor-ira-contigo.pdf" target="_blank">
-        📄 Partitura (PDF)
-      </a>
-    </li>
-    <li>
-  <p><strong>🎥 Gravação</strong></p>
-<iframe width="100%" height="315"
-  src="https://www.youtube.com/embed/DNuMJX4ZaGQ"
-  title="Gravação completa"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-</li>
-</details>
-    <!-- KIT ENSAIO -->
-<details>
-  <summary>Kit ensaio (áudios por voz)</summary>
-  <ul>
-
-    <li>
-      <strong>Soprano</strong><br><br>
-      <audio controls>
-        <source src="assets/audio/o-senhor-ira-contigo-soprano.mp4" type="audio/mp4">
-      </audio>
-    </li>
-
-    <li>
-      <strong>Contralto</strong><br><br>
-      <audio controls>
-        <source src="assets/audio/o-senhor-ira-contigo-contralto.mp4" type="audio/mp4">
-      </audio>
-    </li>
-
-    <li>
-      <strong>Tenor</strong><br><br>
-      <audio controls>
-        <source src="assets/audio/o-senhor-ira-contigo-tenor.mp4" type="audio/mp4">
-      </audio>
-    </li>
-
-    <li>
-      <strong>Baixo</strong><br><br>
-      <audio controls>
-        <source src="assets/audio/o-senhor-ira-contigo-baixo.mp4" type="audio/mp4">
-      </audio>
-    </li>
-</ul>
-    </details>
 <section class="choir">
-    <h2>Salmo 121</h2>
-     <details>
-  <summary>Partitura e gravação</summary>
-  <ul>
-    <li>
-      <a href="assets/pdf/salmo-121.pdf" target="_blank">
-        📄 Partitura (PDF)
-      </a>
-    </li>
-    <li>
-  <p><strong>🎥 Gravação</strong></p>
-<iframe width="100%" height="315"
-  src="https://www.youtube.com/embed/89wwepgOj2k"
-  title="Gravação completa"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-</li>
-</details>
-    <!-- KIT ENSAIO -->
-<details>
-  <summary>Kit ensaio (áudios por voz)</summary>
-  <ul>
+  <h2>Bênção – Que o Senhor da paz (2 Tessalonicenses 3.16)</h2>
 
-    <li>
-      <strong>Soprano</strong><br><br>
-      <audio controls>
-        <source src="assets/audio/salmo-121-soprano.mpeg" type="audio/mpeg">
-      </audio>
-    </li>
+  <details>
+    <summary>Partituras e gravação</summary>
+    <ul>
+      <li>
+        <a href="assets/pdf/bencao-que-o-senhor-da-paz.pdf" target="_blank">
+          📄 Orquestração (PDF)
+        </a>
+      </li>
+      <li>
+        <a href="https://youtu.be/GXaLaP7QzH8" target="_blank">
+          🎥 Gravação
+        </a>
+      </li>
+    </ul>
+  </details>
+</section>
 
-    <li>
-      <strong>Contralto</strong><br><br>
-      <audio controls>
-        <source src="assets/audio/salmo-121-contralto.mpeg" type="audio/mpeg">
-      </audio>
-    </li>
 
-    <li>
-      <strong>Tenor</strong><br><br>
-      <audio controls>
-        <source src="assets/audio/salmo-121-tenor.mpeg" type="audio/mpeg">
-      </audio>
-    </li>
+<!-- O SENHOR IRÁ CONTIGO -->
 
-    <li>
-      <strong>Baixo</strong><br><br>
-      <audio controls>
-        <source src="assets/audio/salmo-121-baixo.mpeg" type="audio/mpeg">
-      </audio>
-    </li>
-    
-  </ul>
-</details>
-    
+<section class="choir">
+  <h2>O Senhor irá contigo (Deuteronômio 31.8)</h2>
+
+  <details>
+    <summary>Partitura e gravação</summary>
+    <ul>
+      <li>
+        <a href="assets/pdf/o-senhor-ira-contigo.pdf" target="_blank">
+          📄 Partitura (PDF)
+        </a>
+      </li>
+      <li>
+        <strong>🎥 Gravação</strong>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/DNuMJX4ZaGQ"
+            title="Gravação completa"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Kit ensaio (áudios por voz)</summary>
+    <ul>
+
+      <li>
+        <strong>Soprano</strong>
+        <audio controls>
+          <source src="assets/audio/o-senhor-ira-contigo-soprano.mp4" type="audio/mp4">
+        </audio>
+      </li>
+
+      <li>
+        <strong>Contralto</strong>
+        <audio controls>
+          <source src="assets/audio/o-senhor-ira-contigo-contralto.mp4" type="audio/mp4">
+        </audio>
+      </li>
+
+      <li>
+        <strong>Tenor</strong>
+        <audio controls>
+          <source src="assets/audio/o-senhor-ira-contigo-tenor.mp4" type="audio/mp4">
+        </audio>
+      </li>
+
+      <li>
+        <strong>Baixo</strong>
+        <audio controls>
+          <source src="assets/audio/o-senhor-ira-contigo-baixo.mp4" type="audio/mp4">
+        </audio>
+      </li>
+
+    </ul>
+  </details>
+
+</section>
+
+
+<!-- SALMO 121 -->
+
+<section class="choir">
+  <h2>Salmo 121</h2>
+
+  <details>
+    <summary>Partitura e gravação</summary>
+    <ul>
+      <li>
+        <a href="assets/pdf/salmo-121.pdf" target="_blank">
+          📄 Partitura (PDF)
+        </a>
+      </li>
+      <li>
+        <strong>🎥 Gravação</strong>
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/89wwepgOj2k"
+            title="Gravação completa"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Kit ensaio (áudios por voz)</summary>
+    <ul>
+
+      <li>
+        <strong>Soprano</strong>
+        <audio controls>
+          <source src="assets/audio/salmo-121-soprano.mpeg" type="audio/mpeg">
+        </audio>
+      </li>
+
+      <li>
+        <strong>Contralto</strong>
+        <audio controls>
+          <source src="assets/audio/salmo-121-contralto.mpeg" type="audio/mpeg">
+        </audio>
+      </li>
+
+      <li>
+        <strong>Tenor</strong>
+        <audio controls>
+          <source src="assets/audio/salmo-121-tenor.mpeg" type="audio/mpeg">
+        </audio>
+      </li>
+
+      <li>
+        <strong>Baixo</strong>
+        <audio controls>
+          <source src="assets/audio/salmo-121-baixo.mpeg" type="audio/mpeg">
+        </audio>
+      </li>
+
+    </ul>
+  </details>
+
+</section>
+
 </main>
 
 <footer>
-  © Elisabete Damião — Acervo composições pessoais
+  © Elisabete Damião — Acervo de composições pessoais
 </footer>
 
 </body>
